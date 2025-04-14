@@ -1,0 +1,27 @@
+Maximum Pairwise Product
++++++++++++++++++++++++++++
+Description:
+++++++++++++++
+Given a list of integers, your task is to find the maximum pairwise product of any two numbers in the list.
+The pairwise product of two numbers is the result of multiplying them. For example, the pairwise product of a and b is a * b.
+You need to determine the maximum product that can be obtained by multiplying two different numbers from the list.
+
+Input:
+++++++++
+1. An integer n (2 ≤ n ≤ 10^5) representing the number of integers in the list.
+2. A list of n integers a[1], a[2], ..., a[n] (−10^9 ≤ a[i] ≤ 10^9) representing the elements of the list.
+
+Output:
+++++++++++
+1. A single integer, the maximum pairwise product of two distinct elements from the list.
+
+Constraints:
++++++++++++++
+1. The list has at least two elements.
+2. All numbers can be either positive or negative, so the result can also be negative, zero, or positive.
+Y2. our solution should be optimized for time complexity, as the input size can be large.
+
+Note:
++++++++
+1. The brute force solution would check all pairs of numbers and compute their product, but this has a time complexity of O(n^2). To improve performance, try finding an optimized approach.
+2. In many cases, the two largest positive numbers or two smallest negative numbers (which, when multiplied, may yield a large positive product) will provide the maximum product.
