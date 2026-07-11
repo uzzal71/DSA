@@ -1,12 +1,10 @@
-/** Stacks! */
-// functions: push(e), pop(), peek(), isEmpty, size()
 class Stack {
   constructor() {
     this.items = [];
   }
 
   push(element) {
-    this.items.push(element);
+    return this.items.push(element);
   }
 
   pop() {
@@ -28,7 +26,19 @@ class Stack {
   }
 
   size() {
+    if (this.isEmpty()) {
+      return "Stack is empty";
+    }
     return this.items.length;
+  }
+
+  print() {
+    if (this.isEmpty()) {
+      return "Stack is empty";
+    }
+    for (let i = this.items.length - 1; i >= 0; i--) {
+      console.log(this.items[i]);
+    }
   }
 }
 
@@ -42,4 +52,5 @@ console.log(stack.size()); // Output: 2
 console.log(stack.isEmpty()); // Output: false
 console.log(stack.pop()); // Output: 2
 console.log(stack.pop()); // Output: 1
-console.log(stack.pop()); // Output: Stack is empty
+console.log(stack.pop()); // Output: undefined
+console.log(stack.isEmpty()); // Output: true
