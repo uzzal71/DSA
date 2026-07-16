@@ -66,3 +66,5 @@ class MyCircularQueue {
     return this.count === this.size;
   }
 }
+
+const obj = new MyCircularQueue();
